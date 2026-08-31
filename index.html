@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wibhor Kumar Roy — Software Developer & CS Student. Building things to understand how they work. Exploring software, AI/ML, and everything in between." />
+  <meta name="author" content="Wibhor Kumar Roy" />
+  <meta property="og:title" content="Wibhor Kumar Roy — Software Developer" />
+  <meta property="og:description" content="CS student exploring software development, AI/ML, automation, and building things that matter." />
+  <meta property="og:type" content="website" />
+  <title>Wibhor Kumar Roy — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Wibhor Kumar Roy — Home">
+        <span class="nav-logo-mark">WR</span>
+        <span class="nav-logo-name">Wibhor</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#arsenal" class="nav-link">Arsenal</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="assets/documents/Wibhor-Kumar-Roy-CV.pdf" class="btn btn-outline btn-sm" download aria-label="Download CV">
+          Download CV
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="navMobile" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="nav-mobile-link">About</a></li>
+        <li><a href="#arsenal" class="nav-mobile-link">Arsenal</a></li>
+        <li><a href="#projects" class="nav-mobile-link">Projects</a></li>
+        <li><a href="#journey" class="nav-mobile-link">Journey</a></li>
+        <li><a href="#certificates" class="nav-mobile-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-mobile-link">Contact</a></li>
+        <li>
+          <a href="assets/documents/Wibhor-Kumar-Roy-CV.pdf" class="btn btn-primary btn-full" download>
+            Download CV
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="section hero" id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-layout">
+
+          <!-- Left: Text content -->
+          <div class="hero-content reveal">
+            <p class="hero-eyebrow">Hello, I'm</p>
+            <h1 class="hero-name">Wibhor Kumar Roy</h1>
+            <p class="hero-role">Software Developer</p>
+
+            <blockquote class="hero-quote">
+              "I build things to understand how they work."
+            </blockquote>
+
+            <p class="hero-bio">
+              Computer Science student at LPU, currently in my 2nd year — somewhere between writing too many print statements and actually making things work. I like software development, AI/ML, automation, and exploring whatever catches my curiosity next.
+            </p>
+
+            <div class="hero-tags">
+              <span class="context-tag">
+                <span class="context-label">Currently learning</span>
+                <span class="context-value">AI / ML</span>
+              </span>
+              <span class="context-tag">
+                <span class="context-label">Building</span>
+                <span class="context-value">Full-stack projects</span>
+              </span>
+              <span class="context-tag">
+                <span class="context-label">Interested in</span>
+                <span class="context-value">Security · UI/UX · Games</span>
+              </span>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">Explore My Work</a>
+              <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+              <a href="assets/documents/Wibhor-Kumar-Roy-CV.pdf" class="btn btn-outline" download>Download CV</a>
+            </div>
+          </div>
+
+          <!-- Right: Profile photo -->
+          <div class="hero-photo reveal" style="--delay: 0.2s">
+            <div class="photo-frame">
+              <img
+                src="assets/images/profile.jpg"
+                alt="Wibhor Kumar Roy"
+                class="profile-img"
+                id="profileImg"
+                onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';"
+              />
+              <div class="photo-placeholder" id="photoPlaceholder">
+                <div class="photo-placeholder-inner">
+                  <div class="placeholder-icon">👤</div>
+                  <p class="placeholder-title">Your Photo</p>
+                  <p class="placeholder-hint">Drop image into:<br><code>assets/images/profile.jpg</code></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+         ============================================================ -->
+    <section class="section about" id="about" aria-label="About me">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">01 — About</span>
+          <h2 class="section-title">A little about me</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-text reveal">
+            <p>
+              I'm Wibhor — a CS student at Lovely Professional University, majoring in Data Science and Machine Learning. I'm in my second year, which means I'm at that perfect stage where I know enough to build things but still discover something new every week.
+            </p>
+            <p>
+              My approach is simple: <strong>pick something I don't know, build something with it, break it, figure out why it broke, fix it.</strong> That loop is how I've learned most of what I know.
+            </p>
+            <p>
+              Outside of code, I'm into cybersecurity (more of a "how does this actually work" interest than a career plan — yet), UI/UX design, games, and anime. I think good design and good code share the same quality: they both feel obvious in hindsight.
+            </p>
+          </div>
+
+          <div class="about-interests reveal" style="--delay: 0.15s">
+            <p class="interests-label">Things I'm into</p>
+            <div class="interest-chips">
+              <span class="chip chip-green">🤖 AI / ML</span>
+              <span class="chip chip-brown">💻 Software Dev</span>
+              <span class="chip chip-sage">🔐 Cybersecurity</span>
+              <span class="chip chip-warm">🎨 UI/UX</span>
+              <span class="chip chip-green">🎮 Games</span>
+              <span class="chip chip-brown">🎌 Anime</span>
+              <span class="chip chip-sage">🐍 Python</span>
+              <span class="chip chip-warm">⚛️ React</span>
+              <span class="chip chip-green">🗄️ Databases</span>
+              <span class="chip chip-brown">🔧 Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW I THINK SECTION
+         ============================================================ -->
+    <section class="section how-i-think" id="how-i-think" aria-label="How I think">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">02 — Process</span>
+          <h2 class="section-title">How I think</h2>
+          <p class="section-subtitle">I learn by building, testing, breaking and improving.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal" style="--delay: 0.0s">
+            <span class="process-num">01</span>
+            <h3 class="process-title">Understand</h3>
+            <p class="process-desc">What exactly am I trying to solve? Not just the surface request — the real problem underneath.</p>
+          </div>
+          <div class="process-step reveal" style="--delay: 0.1s">
+            <span class="process-num">02</span>
+            <h3 class="process-title">Break it down</h3>
+            <p class="process-desc">Turn one big problem into smaller ones. Each piece becomes something I can actually work on.</p>
+          </div>
+          <div class="process-step reveal" style="--delay: 0.2s">
+            <span class="process-num">03</span>
+            <h3 class="process-title">Build</h3>
+            <p class="process-desc">Start with the simplest working version. Don't overthink it — get something running first.</p>
+          </div>
+          <div class="process-step reveal" style="--delay: 0.3s">
+            <span class="process-num">04</span>
+            <h3 class="process-title">Break</h3>
+            <p class="process-desc">Find what doesn't work. Test edge cases, stress it, use it wrong. That's where the learning is.</p>
+          </div>
+          <div class="process-step reveal" style="--delay: 0.4s">
+            <span class="process-num">05</span>
+            <h3 class="process-title">Improve</h3>
+            <p class="process-desc">Make it cleaner, faster, and easier to use. Then start thinking about what's next.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ARSENAL SECTION
+         ============================================================ -->
+    <section class="section arsenal" id="arsenal" aria-label="Skills and technologies">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">03 — Arsenal</span>
+          <h2 class="section-title">My Arsenal</h2>
+          <p class="section-subtitle">Click any technology to see related projects.</p>
+        </div>
+
+        <div class="arsenal-layout">
+          <div class="arsenal-categories reveal">
+            <div class="arsenal-category" data-category="languages">
+              <h3 class="category-title">Languages</h3>
+              <div class="tech-tags">
+                <button class="tech-tag" data-tech="Python" data-projects="job-scraper,file-organizer,recommendation">Python</button>
+                <button class="tech-tag" data-tech="Java" data-projects="">Java</button>
+                <button class="tech-tag" data-tech="C" data-projects="">C</button>
+                <button class="tech-tag" data-tech="C++" data-projects="">C++</button>
+                <button class="tech-tag" data-tech="SQL" data-projects="recommendation">SQL</button>
+              </div>
+            </div>
+
+            <div class="arsenal-category" data-category="frontend">
+              <h3 class="category-title">Frontend</h3>
+              <div class="tech-tags">
+                <button class="tech-tag" data-tech="HTML" data-projects="recommendation">HTML</button>
+                <button class="tech-tag" data-tech="CSS" data-projects="recommendation">CSS</button>
+                <button class="tech-tag" data-tech="Bootstrap" data-projects="">Bootstrap</button>
+                <button class="tech-tag" data-tech="React" data-projects="sakuri,phone-unlock">React</button>
+                <button class="tech-tag" data-tech="Tailwind CSS" data-projects="sakuri,phone-unlock">Tailwind CSS</button>
+              </div>
+            </div>
+
+            <div class="arsenal-category" data-category="backend">
+              <h3 class="category-title">Backend</h3>
+              <div class="tech-tags">
+                <button class="tech-tag" data-tech="Node.js" data-projects="sakuri,phone-unlock">Node.js</button>
+                <button class="tech-tag" data-tech="Express.js" data-projects="sakuri,phone-unlock">Express.js</button>
+                <button class="tech-tag" data-tech="PHP" data-projects="recommendation">PHP</button>
+              </div>
+            </div>
+
+            <div class="arsenal-category" data-category="databases">
+              <h3 class="category-title">Databases</h3>
+              <div class="tech-tags">
+                <button class="tech-tag" data-tech="MySQL" data-projects="recommendation">MySQL</button>
+                <button class="tech-tag" data-tech="MongoDB" data-projects="sakuri,phone-unlock">MongoDB</button>
+              </div>
+            </div>
+
+            <div class="arsenal-category" data-category="data-ai">
+              <h3 class="category-title">Data / AI</h3>
+              <div class="tech-tags">
+                <button class="tech-tag" data-tech="NumPy" data-projects="">NumPy</button>
+                <button class="tech-tag" data-tech="Pandas" data-projects="job-scraper">Pandas</button>
+                <button class="tech-tag" data-tech="Matplotlib" data-projects="">Matplotlib</button>
+                <button class="tech-tag" data-tech="PyTorch" data-projects="">PyTorch</button>
+                <button class="tech-tag" data-tech="Jupyter" data-projects="">Jupyter Notebook</button>
+              </div>
+            </div>
+
+            <div class="arsenal-category" data-category="other">
+              <h3 class="category-title">Other</h3>
+              <div class="tech-tags">
+                <button class="tech-tag" data-tech="Pygame" data-projects="">Pygame</button>
+                <button class="tech-tag" data-tech="Git" data-projects="">Git</button>
+                <button class="tech-tag" data-tech="GitHub" data-projects="">GitHub</button>
+                <button class="tech-tag" data-tech="Cloudinary" data-projects="">Cloudinary</button>
+                <button class="tech-tag" data-tech="Figma" data-projects="">Figma</button>
+                <button class="tech-tag" data-tech="VS Code" data-projects="">VS Code</button>
+                <button class="tech-tag" data-tech="Canva" data-projects="">Canva</button>
+                <button class="tech-tag" data-tech="WebRTC" data-projects="phone-unlock">WebRTC</button>
+                <button class="tech-tag" data-tech="WebSocket" data-projects="recommendation">WebSocket</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="arsenal-sidebar reveal" style="--delay: 0.2s">
+            <div class="arsenal-info" id="arsenalInfo">
+              <div class="arsenal-default">
+                <div class="arsenal-default-icon">⚡</div>
+                <p>Select a technology to see related projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         ============================================================ -->
+    <section class="section projects" id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">04 — Projects</span>
+          <h2 class="section-title">Things I've built</h2>
+          <p class="section-subtitle">Each project taught me something I couldn't have learned from a tutorial.</p>
+        </div>
+
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="full-stack">Full-stack</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+          <button class="filter-btn" data-filter="systems">Systems</button>
+        </div>
+
+        <div class="projects-grid reveal" style="--delay: 0.1s">
+
+          <!-- Project 1: Sakuri App -->
+          <article class="project-card" data-id="sakuri" data-tags="full-stack" role="article">
+            <div class="project-card-img">
+              <img src="assets/projects/sakuri.jpg" alt="Sakuri App project screenshot"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="project-img-placeholder">
+                <span>assets/projects/sakuri.jpg</span>
+              </div>
+              <div class="project-card-badge">Full-stack</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Sakuri App</h3>
+              <p class="project-card-desc">A centralized application platform with an intuitive interface, structured backend services, and persistent data management.</p>
+              <div class="project-tech-tags">
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Tailwind CSS</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm" onclick="openProject('sakuri')" aria-label="View details for Sakuri App">View Details</button>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="GitHub repository for Sakuri App (not yet available)">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="Live demo for Sakuri App (not yet available)">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Job Scraper -->
+          <article class="project-card" data-id="job-scraper" data-tags="python" role="article">
+            <div class="project-card-img">
+              <img src="assets/projects/job-scraper.jpg" alt="Job Search Data Scraping project screenshot"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="project-img-placeholder">
+                <span>assets/projects/job-scraper.jpg</span>
+              </div>
+              <div class="project-card-badge">Python / Data</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Job Search — Data Scraping</h3>
+              <p class="project-card-desc">Collecting and working with job listing data through web scraping. Getting real data into a workable format.</p>
+              <div class="project-tech-tags">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Web Scraping</span>
+                <span class="tech-pill">Pandas</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm" onclick="openProject('job-scraper')" aria-label="View details for Job Search project">View Details</button>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="GitHub repository for Job Search project (not yet available)">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="Live demo for Job Search project (not yet available)">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: File Organizer -->
+          <article class="project-card" data-id="file-organizer" data-tags="python" role="article">
+            <div class="project-card-img">
+              <img src="assets/projects/file-organizer.jpg" alt="Automatic File Organizer project screenshot"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="project-img-placeholder">
+                <span>assets/projects/file-organizer.jpg</span>
+              </div>
+              <div class="project-card-badge">Python / Automation</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Automatic File Organizer</h3>
+              <p class="project-card-desc">A practical automation tool that sorts files into the right folders automatically. Useful, simple, does what it says.</p>
+              <div class="project-tech-tags">
+                <span class="tech-pill">Python</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm" onclick="openProject('file-organizer')" aria-label="View details for File Organizer project">View Details</button>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="GitHub repository for File Organizer (not yet available)">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="Live demo for File Organizer (not yet available)">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Phone Unlock -->
+          <article class="project-card" data-id="phone-unlock" data-tags="systems full-stack" role="article">
+            <div class="project-card-img">
+              <img src="assets/projects/phone-unlock.jpg" alt="Phone-Controlled Laptop Unlock project screenshot"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="project-img-placeholder">
+                <span>assets/projects/phone-unlock.jpg</span>
+              </div>
+              <div class="project-card-badge">Systems / Security</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Phone-Controlled Laptop Unlock</h3>
+              <p class="project-card-desc">Use your phone as a trusted device to authenticate and unlock your laptop — without touching the keyboard.</p>
+              <div class="project-tech-tags">
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">WebRTC</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm" onclick="openProject('phone-unlock')" aria-label="View details for Phone Unlock project">View Details</button>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="GitHub repository for Phone Unlock project (not yet available)">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="Live demo for Phone Unlock project (not yet available)">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Recommendation System -->
+          <article class="project-card" data-id="recommendation" data-tags="ai-ml" role="article">
+            <div class="project-card-img">
+              <img src="assets/projects/recommendation.jpg" alt="Movie and Web-Series Recommendation System project screenshot"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="project-img-placeholder">
+                <span>assets/projects/recommendation.jpg</span>
+              </div>
+              <div class="project-card-badge">AI / ML</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Movie & Web-Series Recommendation System</h3>
+              <p class="project-card-desc">Analyzes metadata and similarity scores to recommend content you'll probably enjoy, based on what you've already watched.</p>
+              <div class="project-tech-tags">
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">WebSocket</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm" onclick="openProject('recommendation')" aria-label="View details for Recommendation System">View Details</button>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="GitHub repository for Recommendation System (not yet available)">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm placeholder-link" aria-label="Live demo for Recommendation System (not yet available)">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         JOURNEY SECTION
+         ============================================================ -->
+    <section class="section journey" id="journey" aria-label="Education and journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">05 — Journey</span>
+          <h2 class="section-title">The journey so far</h2>
+        </div>
+
+        <div class="journey-layout">
+          <div class="timeline reveal">
+            <div class="timeline-item timeline-item--active">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024 — Present</span>
+                <h3 class="timeline-title">B.Tech Computer Science & Engineering</h3>
+                <p class="timeline-org">Lovely Professional University</p>
+                <p class="timeline-detail">Focus: Data Science & Machine Learning</p>
+                <p class="timeline-detail">Currently 2nd year / 3rd semester</p>
+                <span class="timeline-badge">CGPA: 8.03</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2023</span>
+                <h3 class="timeline-title">Higher Secondary Education</h3>
+                <p class="timeline-org">Army Public School Darjeeling</p>
+                <span class="timeline-badge">87.1%</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2021</span>
+                <h3 class="timeline-title">Secondary Education</h3>
+                <p class="timeline-org">Army Public School Darjeeling</p>
+                <span class="timeline-badge">92.7%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievements reveal" style="--delay: 0.15s">
+            <h3 class="achievements-title">Some highlights</h3>
+            <div class="achievement-list">
+              <div class="achievement-item">
+                <span class="achievement-icon">💯</span>
+                <div class="achievement-text">
+                  <strong>200+ problems solved</strong>
+                  <span>Across competitive programming platforms</span>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-icon">🏅</span>
+                <div class="achievement-text">
+                  <strong>LeetCode 100 Days Badge</strong>
+                  <span>Consistent daily problem solving</span>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-icon">🏆</span>
+                <div class="achievement-text">
+                  <strong>Top 25 — College Hackathon</strong>
+                  <span>Among 50+ competing teams</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CERTIFICATES SECTION
+         ============================================================ -->
+    <section class="section certificates" id="certificates" aria-label="Certificates">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">06 — Certificates</span>
+          <h2 class="section-title">Certificate Shelf</h2>
+          <p class="section-subtitle">Things I went out of my way to learn and finish.</p>
+        </div>
+
+        <div class="cert-grid reveal">
+
+          <div class="cert-card">
+            <div class="cert-card-accent"></div>
+            <div class="cert-card-body">
+              <span class="cert-issuer">Udemy</span>
+              <h3 class="cert-title">Master Generative AI and Generative AI Tools including ChatGPT</h3>
+              <span class="cert-date">August 2025</span>
+            </div>
+            <div class="cert-card-actions">
+              <button class="btn btn-ghost btn-sm" onclick="previewCert('assets/certificates/certificate-1.pdf', 'Master Generative AI')" aria-label="Preview Generative AI certificate">Preview</button>
+              <a href="assets/certificates/certificate-1.pdf" class="btn btn-outline btn-sm" download aria-label="Download Generative AI certificate">Download</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-card-accent"></div>
+            <div class="cert-card-body">
+              <span class="cert-issuer">Coursera</span>
+              <h3 class="cert-title">The Bits and Bytes of Computer Networking</h3>
+              <span class="cert-date">September 2025</span>
+            </div>
+            <div class="cert-card-actions">
+              <button class="btn btn-ghost btn-sm" onclick="previewCert('assets/certificates/certificate-2.pdf', 'Computer Networking')" aria-label="Preview Computer Networking certificate">Preview</button>
+              <a href="assets/certificates/certificate-2.pdf" class="btn btn-outline btn-sm" download aria-label="Download Computer Networking certificate">Download</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-card-accent"></div>
+            <div class="cert-card-body">
+              <span class="cert-issuer">Coursera</span>
+              <h3 class="cert-title">Software Development Processes and Methodologies</h3>
+              <span class="cert-date">May 2026</span>
+            </div>
+            <div class="cert-card-actions">
+              <button class="btn btn-ghost btn-sm" onclick="previewCert('assets/certificates/certificate-3.pdf', 'Software Dev Processes')" aria-label="Preview Software Development certificate">Preview</button>
+              <a href="assets/certificates/certificate-3.pdf" class="btn btn-outline btn-sm" download aria-label="Download Software Development certificate">Download</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-card-accent"></div>
+            <div class="cert-card-body">
+              <span class="cert-issuer">Lovely Professional University</span>
+              <h3 class="cert-title">LPU Training Program</h3>
+              <span class="cert-date">June 2025 — July 2025</span>
+            </div>
+            <div class="cert-card-actions">
+              <button class="btn btn-ghost btn-sm" onclick="previewCert('assets/certificates/certificate-4.pdf', 'LPU Training')" aria-label="Preview LPU Training certificate">Preview</button>
+              <a href="assets/certificates/certificate-4.pdf" class="btn btn-outline btn-sm" download aria-label="Download LPU Training certificate">Download</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RATING SECTION
+         ============================================================ -->
+    <section class="section rating" id="rating" aria-label="Visitor ratings">
+      <div class="container">
+        <div class="rating-layout">
+          <div class="rating-form-side reveal">
+            <span class="section-label">07 — Feedback</span>
+            <h2 class="rating-title">What do you think?</h2>
+            <p class="rating-subtitle">No email, no comments — just a name and a star rating.</p>
+
+            <form class="rating-form" id="ratingForm" novalidate>
+              <div class="form-group">
+                <label for="raterName" class="form-label">Your name</label>
+                <input type="text" id="raterName" class="form-input" placeholder="e.g. Rahul" maxlength="40" autocomplete="given-name" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Your rating</label>
+                <div class="star-rating" id="starRating" role="radiogroup" aria-label="Star rating">
+                  <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+                  <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+                  <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+                  <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+                  <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="submitRating">Submit Rating</button>
+              <p class="rating-msg" id="ratingMsg" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="rating-display-side reveal" style="--delay: 0.15s">
+            <div class="rating-summary">
+              <div class="rating-avg" id="ratingAvg">—</div>
+              <div class="rating-stars-display" id="ratingStarsDisplay">☆☆☆☆☆</div>
+              <p class="rating-count" id="ratingCount">No ratings yet</p>
+            </div>
+
+            <div class="recent-ratings" id="recentRatings">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         ============================================================ -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-text reveal">
+            <span class="section-label">08 — Contact</span>
+            <h2 class="contact-title">Let's talk.</h2>
+            <p class="contact-bio">
+              Whether it's a project, a question, or just wanting to say hi — I'm usually around. Drop me an email or find me on GitHub or LinkedIn.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:wibhorr@gmail.com" class="contact-link" aria-label="Send email to Wibhor">
+                <span class="contact-link-icon">✉️</span>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-value">wibhorr@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://github.com/iwilltell" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Wibhor's GitHub profile">
+                <span class="contact-link-icon">🐙</span>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">github.com/iwilltell</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/iwilltell/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Wibhor's LinkedIn profile">
+                <span class="contact-link-icon">💼</span>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">linkedin.com/in/iwilltell</span>
+                </div>
+              </a>
+            </div>
+
+            <a href="assets/documents/Wibhor-Kumar-Roy-CV.pdf" class="btn btn-primary" style="margin-top: 2rem;" download>
+              Download CV
+            </a>
+          </div>
+
+          <div class="contact-footer-note reveal" style="--delay: 0.15s">
+            <p class="footer-quote">"Look at what I think, what I know, and what I build."</p>
+            <p class="footer-name">— Wibhor Kumar Roy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Wibhor Kumar Roy. Built with HTML, CSS & JS.</p>
+        <div class="footer-links">
+          <a href="https://github.com/iwilltell" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/iwilltell/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:wibhorr@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PROJECT DETAIL MODAL
+       ============================================================ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">✕</button>
+      <div class="modal-content" id="modalContent">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Preview Modal -->
+  <div class="modal-overlay" id="certModalOverlay" role="dialog" aria-modal="true" aria-labelledby="certModalTitle" aria-hidden="true">
+    <div class="modal modal--cert" id="certModal">
+      <button class="modal-close" id="certModalClose" aria-label="Close certificate preview">✕</button>
+      <div class="modal-content" id="certModalContent">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Easter Egg Terminal -->
+  <div class="terminal-overlay" id="terminalOverlay" aria-hidden="true" role="dialog" aria-label="Secret terminal">
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="terminal-dot"></span>
+        <span class="terminal-dot"></span>
+        <span class="terminal-dot"></span>
+        <span class="terminal-title">wibhor@portfolio ~</span>
+        <button class="terminal-close" id="terminalClose" aria-label="Close terminal">✕</button>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="terminal-line">
+          <span class="terminal-prompt">$ </span>
+          <span class="terminal-text" id="terminalText"></span>
+        </div>
+        <div class="terminal-output" id="terminalOutput"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
